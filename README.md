@@ -1,1 +1,1 @@
-EPAM University Program
+EPAM university studing
