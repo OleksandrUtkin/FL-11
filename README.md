@@ -1,1 +1,1 @@
-EPAM university studing
+studing in EPAM university 
