@@ -151,6 +151,9 @@ h2 ~ p {
 .box-work h2 + p {
 	text-indent: 0px;
 }
+.contact-form input, #contact_message {
+	color: #fff;
+}
 .tm-banner-text {
 	animation-name: move;
 	animation-duration: 1.5s;
