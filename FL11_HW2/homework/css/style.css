@@ -28,15 +28,11 @@ section {
 	overflow: hidden;
 }
 section::before {
-	content: "";
+	content: '';
 	display: block;
-	height: 60px;
-	width: 60px;
-	position: absolute;
-	transform: rotate(45deg);
-	background-color: lightskyblue;
-    left: -30px;
-    top: -30px;
+	border: 20px solid transparent;
+	border-left: 20px solid lightskyblue;
+	border-top: 20px solid lightskyblue;
 }
 .heading h2 {
 	color: #76cdd7;
