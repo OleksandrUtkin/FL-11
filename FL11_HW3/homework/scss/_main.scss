@@ -1,0 +1,249 @@
+body {
+	margin: 0px;
+	background-color: $mainThemeColor;
+}
+.header {
+	height: 100vh;
+	background-image: $headerBgi;
+	background-size: cover;
+	display: flex;
+	width: 100%;
+	justify-content: center;
+	border-radius: 0px 0px 30em/15em 0px;
+}
+.header-wrap {
+	width: 100%;
+	max-width: 1080px;
+	padding: 20px;
+}
+.landing-logo {
+	display: flex;
+	img {
+		margin-right: 20px;
+	}
+	p {
+	    display: flex;
+	    flex-direction: column;
+	    margin: 0px;
+	    justify-content: center;
+	    font-family: $logoFooterFont;
+        font-weight: 600;
+    	font-size: 24px;
+    	line-height: 1;
+	    align-items: center;
+	    color: $headerTextColor;
+    	span {
+    		font-weight: 400;
+    		font-size: 10px;
+    	}
+	}
+}
+.header_heading {
+	font-family: $mainFont;
+	font-size: 70px;
+	color: $headerTextColor;
+	font-weight: 800;
+	max-width: 500px;
+	position: relative;
+	z-index: 1;
+	margin-bottom: 30px;
+	margin-top: 60px;
+    line-height: 1;
+	&:after {
+		content: "";
+		display: block;
+		width: 295px;
+		height: 20px;
+		background-color: $underTextColor;
+		position: absolute;
+		bottom: 4px;
+		z-index: -1;
+	}
+}
+.header_text {
+	font-family: $logoFooterFont;
+	color: $headerTextColor;
+	white-space: pre-line;
+	line-height: 1.5;
+	margin-bottom: 55px;
+}
+.header_button, .section_banner_button {
+	background-color: $buttonColor;
+	height: 48px;
+	width: 145px;
+	color: #fff;
+	border: none;
+	border-radius: 4px;
+	font-size: 18px;
+	font-weight: 600;
+	font-family: $mainFont;
+	&:hover {
+		cursor: pointer;
+	}
+}
+.section {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: $mainThemeColor;
+	justify-content: center;
+	position: relative;
+}
+.section_card_wrap {
+	width: 100%;
+	max-width: 1080px;
+	padding: 20px;
+	display: flex;
+	max-width: 1080px;
+    width: 100%;
+    justify-content: center;
+    padding-top: 0px;
+    margin-bottom: 150px;
+}
+.section_card {
+	display: flex;
+	flex-direction: column;
+	background-color: $footerColor;
+	padding: 20px;
+	width: 306px;
+	height: 370px;
+	margin-right: 20px;
+	border-radius: 5px;
+	&:last-child {
+		margin-right: 0px;
+	}
+}
+.section_card_img {
+	border-radius: 5px;
+    min-height: 200px;
+    max-height: 200px;
+}
+.section_text {
+	color: $headerTextColor;
+    font-weight: 600;
+    font-size: 38px;
+	font-family: $mainFont;
+	position: relative;
+	z-index: 1;
+	&:before {
+		content: "";
+		position: absolute;
+		width: 170px;
+		height: 10px;
+		background-color: $underTextColor;
+	    bottom: 8px;
+    	right: 11px;
+    	z-index: -1;
+	}
+}
+.section_card_heading {
+	color: #fff;
+	font-family: $mainFont;
+	font-size: 20px;
+    font-weight: 600;
+    position: relative;
+    z-index: 1;
+    margin-left: auto;
+    margin-right: auto;
+    &:after {
+		content: "";
+		display: block;
+		width: 100%;
+		height: 9px;
+		background-color: $underTextColor;
+		position: absolute;
+		bottom: 0px;
+		z-index: -1
+    }
+}
+.section_card_text {
+	font-family: $logoFooterFont;
+	margin: 0px;
+	color: $blockTextColor;
+	font-size: 14px;
+	text-align: center;
+	line-height: 1.5;
+    height: 105px;
+    display: flex;
+    align-items: center;
+}
+.footer {
+	width: 100%;
+	display: flex;
+	background-color: $footerColor;
+	justify-content: center;
+	height: 200px;
+	z-index: 1;
+	position: relative;
+}
+.footer-wrap {
+	width: 100%;
+	max-width: 1080px;
+	padding: 20px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding-top: 80px;
+}
+.footer_logo {
+	width: max-content;
+	height: max-content;
+	p {
+		color: $blockTextColor;
+		font-family: $logoFooterFont;
+		span {
+			font-weight: 600;
+		}
+	}
+}
+.footer_text {
+	max-width: 265px;
+	height: max-content;
+	font-family: $logoFooterFont;
+	color: $blockTextColor;
+	font-size: 12px;
+	line-height: 1.5;
+}
+.footer-cr {
+	height: max-content;
+	font-family: $logoFooterFont;
+	color: #C0C3CE;
+	font-size: 14px;
+}
+.section_banner {
+	width: 840px;
+	background: $gradient;
+	border-radius: 5px;
+    position: absolute;
+    z-index: 2;
+    bottom: -60px;
+    display: flex;
+    justify-content: space-around;
+    height: 120px;
+    align-items: center;
+}
+.section_banner_heading {
+	font-family: $mainFont;
+	color: $headerTextColor;
+	font-size: 24px;
+    font-weight: 800;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    z-index: 1;
+    position: relative;
+    &:after {
+		content: "";
+		display: block;
+		width: 51px;
+    	left: 95px;
+		height: 9px;
+		background-color: $underTextColor;
+		position: absolute;
+		bottom: 5px;
+		z-index: -1;
+    }
+}
+.section_banner_text {
+	color: $blockTextColor;
+	font-family: $logoFooterFont;
+}
