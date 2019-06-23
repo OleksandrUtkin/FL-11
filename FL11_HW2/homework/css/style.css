@@ -323,4 +323,7 @@ h2 ~ p {
 	#ideas {
 		margin-bottom: 0px;
 	}
+	body {
+	    background-color: #fff;
+	}
 }
