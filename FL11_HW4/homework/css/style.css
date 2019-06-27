@@ -282,6 +282,7 @@ header {
 	justify-content: center;
 	align-items: center;
 	color: #fff;
+	background-color: rgba(0, 0, 0, 0.5 );
 }
 .gallery_date {
 	position: absolute;
