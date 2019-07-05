@@ -34,7 +34,6 @@ if (email === null || email === '') {
 				} else {
 					const newPasswordConfirm = prompt('Please, enter new password again', '');
 					if ( newPasswordConfirm === newPassword) {
-						user['mortal'].email === newPassword;
 						alert('You have successfully changed your password.')
 					} else {
 						alert('You wrote the wrong password.')
