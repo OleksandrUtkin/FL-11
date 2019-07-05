@@ -1,4 +1,3 @@
-
 let user = {
 	mortal: {
 		email: 'user@gmail.com',
