@@ -12,11 +12,7 @@ if (ax===bx && ay===by) {
 	const magicNumber = 2;
 	let xc = (ax+bx)/magicNumber;
 	let yc = (ay+by)/magicNumber;
-	if (xc===cx && yc===cy) {
-		console.log(true) 
-	} else {
-		console.log(false)
-	}
+	console.log (xc===cx && yc===cy)
 }
 
 
