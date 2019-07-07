@@ -7,11 +7,13 @@ let user = {
 		email: 'admin@gmail.com',
 		password: 'AdminPass'
 	}
-}
+};
+let emailLength6 = 6,
+	emailLength5 = 5;
 const email = prompt('Please, enter your email', '');
 if (email === null || email === '') {
 	alert('Canceled')
-} else if (email.length < 6) {
+} else if (email.length < emailLength6) {
 	alert(`I don't know any emails having name length less than 6 symbols`)
 } else if (email === user['mortal'].email || email === user['admin'].email) {
 	const password = prompt('Please, enter your password', '');
@@ -29,7 +31,7 @@ if (email === null || email === '') {
 			} else if (email === user['mortal'].email && oldPassword === user['mortal'].password || 
 				email === user['admin'].email && oldPassword === user['admin'].password ) {
 				const newPassword = prompt('Please, enter new password', '');
-				if (newPassword.length < 5) {
+				if (newPassword.length < emailLength5) {
 					alert('It’s too short password. Sorry.')
 				} else {
 					const newPasswordConfirm = prompt('Please, enter new password again', '');
